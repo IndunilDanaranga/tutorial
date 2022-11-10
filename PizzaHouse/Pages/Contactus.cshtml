@@ -1,0 +1,93 @@
+﻿@page
+@model PizzaHouse.Pages.ContactusModel
+@{
+}
+<div class="container">
+    <div class="card-group">
+        <div class="card bg-dark text-center" style="margin:10px;">
+            <div class="card-header">
+                <a href="Pizza">
+                    <button class="btn btn-dark font-weight-bold" style="border-radius:8px;">
+                        Order Now !
+                    </button>
+                </a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title" style="color:white">
+                    Dr.Pizza Pizza Cafe
+                </h5>
+                <p class="font-weight-bold" style="color:white">
+                    6541 Hollywood Blvd <br />
+                    Los Angeles, CA 90028 <br />
+                    P:0766004815 <br />
+                </p>
+                <p style="color:white">
+                    Business hours
+                </p>
+                <br />
+                <p class="font-weight-bold" style="color:white">
+                    Su, Mo, Tu, We, Th, Fr, Sa <br />
+                    7:00am – 2:00am
+                </p>
+            </div>
+            <div class="card-footer">
+                <p style="color:white">
+                    Contact Us
+                </p>
+            </div>
+        </div>
+        <div class="card bg-dark text-center" style="margin:10px;">
+            <div class="card-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.891748918397!2d80.57372672056827!3d6.584774274824294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3ec24479d959b%3A0xa7c625c88e971f93!2sP%20%26%20S%20Kahawatte!5e0!3m2!1sen!2slk!4v1668032541671!5m2!1sen!2slk" style="border:0;height:100%;width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="card bg-dark text-left" style="margin:10px;">
+            <div class="card-body">
+                <h5 class="card-title font-weight-bold" style="color:peru">
+                    Talk Us
+                </h5>
+                <form action="/" method="post">
+                    <div class="row">
+                        <div class="col-sm-12 col-sm-6 col-lg-6 col-xl-6" style="color:white">
+                            First Name:
+                            <br />
+                            <input type="text" name="fname" value="" placeholder="First name" style="width:100%" />
+                        </div>
+                        <div class="col-sm-12 col-sm-6 col-lg-6 col-xl-6" style="color:white">
+                            Last Name:
+                            <br />
+                            <input type="text" name="lname" value="" placeholder="Last name" style="width:100%" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-sm-6 col-lg-6 col-xl-6" style="color:white">
+                            Last Name:
+                            <br />
+                            <input type="email" name="email" value="" placeholder="Email" style="width:100%" />
+                        </div>
+                        <div class="col-sm-12 col-sm-6 col-lg-6 col-xl-6" style="color:white" >
+                            Last Name:
+                            <br />
+                            <input type="tel" name="pno" value="" placeholder="Pno" pattern="[0-9]{10}" style="width:100%" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container" style="color:white">
+                            Questions or Comments:
+                            <br />
+                            <textarea name="massage" rows="5" cols="20" style="width:100%"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container">
+                            <br />
+                            <button type="submit" class="btn btn-dark" style="width:100%">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

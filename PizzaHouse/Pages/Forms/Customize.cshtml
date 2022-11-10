@@ -1,0 +1,21 @@
+﻿@page
+@model PizzaHouse.Pages.Forms.CustomizeModel
+@{
+}
+<div class="text-center">
+    <h1 class="display-4">Create Your Own Pizza!</h1>
+</div>
+<div class="text-center">
+    <form method="POST">
+        <input type="text" placeholder="Give your pizza a Name.." asp-for="Pizzas.PizzaName"/><br />
+        <input type="checkbox" asp-for="Pizzas.Tomato_Sauce"/>Tomato Sauce<br />
+        <input type="checkbox" asp-for="Pizzas.Cheese"/>Cheese<br />
+        <input type="checkbox" asp-for="Pizzas.Peperoni"/>Peperoni<br />
+        <input type="checkbox" asp-for="Pizzas.Mushroom"/>Mushroom<br />
+        <input type="checkbox" asp-for="Pizzas.Tuna"/>Tuna<br />
+        <input type="checkbox" asp-for="Pizzas.Pineapple"/>Pineapple<br />
+        <input type="checkbox" asp-for="Pizzas.Ham"/>Ham<br />
+        <input type="checkbox" asp-for="Pizzas.Beef"/>Beef<br />
+        <button type="submit" class="btn btn-primary mt-2">Order My Pizza</button>
+    </form>
+</div>

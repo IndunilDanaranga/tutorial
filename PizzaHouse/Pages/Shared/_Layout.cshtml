@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PizzaHouse</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body style="background-color:#929AA2">
+    <header>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6">
+                    <h1 class="x-auto">Dr.Pizza</h1>
+                    <P class="lead">Enjoy Now.....!</P>
+                </div>
+                <div class="col-lg-9 col-xl-9 col-md-6 col-sm-6">
+                    <img src="~/Images/istockphoto-1178705635-612x612-removebg-preview.png" class="x-auto d-block img-fluid" style="height:90px;" />
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="row">
+        <div class="col-12 navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="/Index" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="/Pizza" class="nav-link">Pizzas</a></li>
+                        <li class="nav-item"><a href="/Aboutus" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="/Contactus" class="nav-link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted bg-dark">
+        <div class="container">
+            &copy; 2022 - Dr.PIzza - <a href="https://web.facebook.com/"><img src="~/Images/Logo/Facebook-logo.png" style="height:25px;margin:-6px;" class="img-fluid" /></a>
+            <a href="https://www.instagram.com/"><img src="~/Images/Logo/Instagram-Logo.png" style="height:25px;margin:1px;" class="img-fluid" /></a>
+            <a href="https://twitter.com/"><img src="~/Images/Logo/twitter-bird-symbols-png-logo-0.png" style="height:31px;margin:1px;" class="img-fluid" /></a>
+            <a href="https://www.google.com/maps"><img src="~/Images/Logo/355980.png" style="height:22px;margin:10px;" class="img-fluid" /></a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
